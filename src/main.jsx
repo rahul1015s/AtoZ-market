@@ -7,6 +7,8 @@ import ProductList from './pages/ProductList.jsx'
 import './index.css'; 
 import { Provider } from 'react-redux';
 import store from './redux/store.js';
+import WomenDress from './pages/WomenDress.jsx';
+import HomePage from './Home/HomePage.jsx';
 
 
 const router = createBrowserRouter([
@@ -14,9 +16,12 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
+      {path: '/', element: <HomePage />},
       {
-        path: 'products', // for "/products"
-        element: <ProductList />,
+        path: 'products', element: <ProductList />,
+      },
+      {
+        path: 'women-dress', element: <WomenDress />
       },
     ],
   },
