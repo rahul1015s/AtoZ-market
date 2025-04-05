@@ -1,12 +1,35 @@
-# React + Vite
+# 🛍️ AtoZ Market
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce front-end built with **ReactJS**, **TailwindCSS**, **React Router**, and **RTK Query**. It features a clean UI and responsive design for a smooth shopping experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Hero section with Swiper carousel
+- ✅ Category section (Amazon-style layout)
+- ✅ Product listing by category
+- ✅ Mobile responsive design
+- ✅ React Router for page navigation
+- ✅ RTK Query for efficient API fetching
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- **ReactJS**
+- **TailwindCSS**
+- **React Router**
+- **RTK Query (Redux Toolkit Query)**
+- **SwiperJS**
+- **Vite**
+
+---
+
+## 📦 Getting Started
+
+```bash
+git clone https://github.com/rahul1015s/AtoZ-market.git
+cd AtoZ-market
+npm install
+npm run dev

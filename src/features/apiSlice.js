@@ -9,7 +9,10 @@ export const productsApi  =  createApi({
             }),
             getProduct:builder.query({
                 query: (product) => `products/search?q=${product}`
-             })
+             }),
+             getWomenDress: builder.query({
+                query:({limit = 100, skip = 0} = {}) => `/products/category/womens-dresses?limit=${limit}&skip=${skip}`
+             }), 
         })
 });
-export const {useGetAllProductsQuery, useGetProductQuery} = productsApi;
+export const {useGetAllProductsQuery, useGetProductQuery, useGetWomenDressQuery} = productsApi;
