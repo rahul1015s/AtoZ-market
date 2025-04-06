@@ -18,23 +18,23 @@ import { Link } from 'react-router-dom'
 const productCategoryImg = [
     // Girls Products
     { id: 1, name: "women-dress", img: womenDress, url: "women-dress" },
-    { id: 2, name: "women-shoes", img: womenShoes, url: "" },
-    { id: 3, name: "women-bags", img: womenBags, url: "" },
-    { id: 4, name: "jewelery", img: jewelery, url: "" },
+    { id: 2, name: "women-shoes", img: womenShoes, url: "women-shoes" },
+    { id: 3, name: "women-bags", img: womenBags, url: "women-bags" },
+    { id: 4, name: "jewelery", img: jewelery, url: "womens-jewellery" },
     { id: 5, name: "skincare", img: skincare, url: "" },
   
     // Mens Products
-    { id: 6, name: "men-shirts", img: menShirts, url: "" },
-    { id: 7, name: "men-shoes", img: menShoes, url: "" },
-    { id: 8, name: "men-watches", img: menWatches, url: "" },
+    { id: 6, name: "men-shirts", img: menShirts, url: "mens-shirts" },
+    { id: 7, name: "men-shoes", img: menShoes, url: "mens-shoes" },
+    { id: 8, name: "men-watches", img: menWatches, url: "mens-watches" },
   
     // Unisex/Accessories
-    { id: 9, name: "fragrances", img: fragrances, url: "" },
-    { id: 10, name: "sunglasses", img: sunglasses, url: "" },
+    { id: 9, name: "fragrances", img: fragrances, url: "fragrances" },
+    { id: 10, name: "sunglasses", img: sunglasses, url: "sunglasses" },
   
     // Gadgets
-    { id: 11, name: "mobiles", img: mobiles, url: "" },
-    { id: 12, name: "laptops", img: laptops, url: "" },
+    { id: 11, name: "mobiles", img: mobiles, url: "smartphones" },
+    { id: 12, name: "laptops", img: laptops, url: "laptops" },
   ];
   
   

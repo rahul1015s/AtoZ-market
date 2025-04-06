@@ -1,30 +1,29 @@
 import React from "react";
-import { useGetWomenDressQuery } from "../features/apiSlice";
+import { useGetMensShoesQuery } from "../features/apiSlice";
 import { repeatProducts } from "../utils/repeatProducts";
 import "../styles/productCard.css";
 import { useDispatch } from "react-redux";
 import { addItems } from "../redux/cartSlice";
 
-function WomenDress() {
+function MensShoes() {
   const dispatch = useDispatch();
-
   const {
-    data: womenDress,
+    data: mensShoes,
     error,
     isError,
     isLoading,
-  } = useGetWomenDressQuery({ limit: 100, skip: 0 });
+  } = useGetMensShoesQuery({ limit: 100, skip: 0 });
 
   if (isLoading) return <h1>Loading....</h1>;
   if (isError) return <div>Error: {error.toString()}</div>;
 
-  const loopWomenDress = repeatProducts(womenDress.products);
-  console.log(womenDress);
+  const loopMensShoes = repeatProducts(mensShoes.products);
+  console.log(mensShoes);
 
   return (
     <div className="p-4">
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {loopWomenDress.map((product) => (
+        {loopMensShoes.map((product) => (
           <li key={product.id} className="product.card">
             <div className="product-img-box">
               <img
@@ -81,4 +80,4 @@ function WomenDress() {
   );
 }
 
-export default WomenDress;
+export default MensShoes;

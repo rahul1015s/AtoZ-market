@@ -9,6 +9,17 @@ import { Provider } from 'react-redux';
 import store from './redux/store.js';
 import WomenDress from './pages/WomenDress.jsx';
 import HomePage from './Home/HomePage.jsx';
+import WomenShoes from './pages/WomenShoes.jsx';
+import WomenBags from './pages/WomenBags.jsx';
+import WomensJewellery from './pages/WomensJewellery.jsx';
+import MensShirts from './pages/MensShirts.jsx';
+import MensShoes from './pages/MensShoes.jsx';
+import MensWatches from './pages/MensWatches.jsx';
+import Fragrances from './pages/Fragrances.jsx';
+import Sunglasses from './pages/Sunglasses.jsx';
+import SmartPhones from './pages/SmartPhones.jsx';
+import Laptops from './pages/Laptops.jsx';
+import Cart from './components/Cart.jsx';
 
 
 const router = createBrowserRouter([
@@ -23,6 +34,17 @@ const router = createBrowserRouter([
       {
         path: 'women-dress', element: <WomenDress />
       },
+      {path: 'women-shoes', element: <WomenShoes />},
+      {path: 'women-bags', element: <WomenBags />},
+      {path: 'womens-jewellery', element: <WomensJewellery />},
+      {path: 'mens-shirts', element: <MensShirts />},
+      {path: 'mens-shoes', element: <MensShoes />},
+      {path: 'mens-watches', element: <MensWatches />},
+      {path: 'fragrances', element: <Fragrances />},
+      {path: 'sunglasses', element: <Sunglasses />},
+      {path: 'smartphones', element: <SmartPhones />},
+      {path: 'laptops', element: <Laptops />},
+      {path: 'cart', element: <Cart />},
     ],
   },
 ]);

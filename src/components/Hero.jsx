@@ -2,7 +2,7 @@
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Link } from "react-router-dom";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -23,43 +23,43 @@ const HeroImgs = [
     id: 1,
     name: "Fashions",
     img: fashion,
-    url: "",
+    url: "women-dress",
   },
   {
     id: 2,
     name: "heroBags",
     img: heroBags,
-    url: "",
+    url: "women-bags",
   },
   {
     id: 3,
     name: "heroJwellery",
     img: heroJwellery,
-    url: "",
+    url: "womens-jewellery",
   },
   {
     id: 4,
     name: "Men Fashiopn",
     img: manFashion,
-    url: ""
+    url: "mens-shirts"
   },
   {
     id: 5,
     name: "Mobiles",
     img: mobiles,
-    url: ""
+    url: "smartphones"
   },
   {
     id: 6,
     name: "Shoes",
     img: shoes,
-    url: ""
+    url: "mens-shoes"
   },
   {
     id: 6,
     name: "Watches",
     img: watches,
-    url: ""
+    url: "mens-watches"
   },
 
 ];
@@ -84,8 +84,11 @@ export default () => {
     >
       {HeroImgs.map((item) => (
         <SwiperSlide key={item.id}>
+          <Link to={`/${item.url}`}>
           <img src={item.img} alt={item.name} 
            className="w-full h-[200px] sm:h-[250px] md:h-[520px] object-cover rounded-xl"/>
+          </Link>
+          
          
         </SwiperSlide>
       ))}

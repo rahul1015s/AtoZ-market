@@ -1,0 +1,119 @@
+.product-card {
+    background-color: white;
+    border: 1px solid #e5e7eb; /* Tailwind: border-gray-200 */
+    border-radius: 1rem; /* rounded-2xl */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  .product-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* hover:shadow-xl */
+    transform: scale(1.02); /* hover:scale-[1.02] */
+  }
+  
+  .product-img-box {
+    width: 100%;
+    height: 20rem; /* h-64 */
+    overflow: hidden;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .product-info {
+    padding: 1rem; /* p-4 */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .product-title {
+    font-size: 1.125rem; /* text-lg */
+    font-weight: 600;
+    color: #111827; /* text-gray-900 */
+  }
+  
+  .product-brand {
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  .product-desc {
+    font-size: 0.875rem;
+    color: #4b5563; /* text-gray-600 */
+  }
+  
+  .product-price-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #047857; /* text-green-700 */
+  }
+  
+  .product-discount {
+    font-size: 0.875rem;
+    color: #dc2626; /* text-red-600 */
+    font-weight: 600;
+  }
+  
+  .product-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+  }
+  @media (min-width: 768px) {
+    .product-meta {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .availability-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .in-stock {
+    background-color: #d1fae5; /* bg-green-100 */
+    color: #065f46; /* text-green-800 */
+  }
+  
+  .out-of-stock {
+    background-color: #fee2e2; /* bg-red-100 */
+    color: #991b1b; /* text-red-800 */
+  }
+  
+  .rating {
+    color: #facc15; /* text-yellow-500 */
+  }
+  
+  .shipping {
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  .add-to-cart-btn {
+    background-color: #facc15; /* bg-yellow-400 */
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #fbbf24; /* hover:bg-yellow-500 */
+  }
+  
