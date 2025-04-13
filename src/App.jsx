@@ -2,7 +2,7 @@
 import React from 'react';
 import NavBar from './components/NavBar.jsx';
 import { Outlet } from 'react-router-dom';
-import HomePage from './Home/HomePage.jsx';
+import Footer from './components/Footer.jsx';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <div>   
         <NavBar />
         <Outlet />
+        <Footer />
       </div>  
       
 
