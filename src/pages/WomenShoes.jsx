@@ -23,9 +23,9 @@ function WomenShoes() {
 
   return (
     <div className="p-4">
-      <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {loopWomenshoes.map((product) => (
-          <li key={product.id} className="product.card">
+          <li key={product.id} className="product-card">
             <div className="product-img-box">
               <img
                 src={product.thumbnail}
@@ -36,30 +36,29 @@ function WomenShoes() {
 
             <div className="product-info">
               <h1 className="product-title">{product.title}</h1>
-              <span className="product.brand">{product.brand}</span>
-              <p className="product.desc">{product.description}</p>
+              <span className="product-brand">{product.brand}</span>
+              <p className="product-desc">{product.description}</p>
 
               <div className="product-price-box">
-                <span>
+                <span className="line-through text-gray-400">
                   $
                   {(
                     product.price /
                     (1 - product.discountPercentage / 100)
                   ).toFixed(2)}
                 </span>
+                <span className="text-green-700 font-bold">${product.price}</span>
 
-                <span className="product-discount">
-                  {product.discountPercentage} % off
-                </span>
+                <span className="product-discount">{product.discountPercentage}% off</span>
               </div>
 
               <div className="product-meta">
                 <span
                   className={`availability-badge ${
-                    product.stock > 0 ? "in-stock" : "out-of-stock"
+                    product.availabilityStatus !== 0 ? "in-stock" : "out-of-stock"
                   }`}
                 >
-                  {product.stock > 0 ? "In Stock" : "Out of Stock"}
+                  {product.availabilityStatus !== 0 ? "In Stock" : "Out of Stock"}
                 </span>
 
                 <span className="rating">⭐ {product.rating}</span>
