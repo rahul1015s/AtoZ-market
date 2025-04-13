@@ -21,7 +21,7 @@ import SmartPhones from './pages/SmartPhones.jsx';
 import Laptops from './pages/Laptops.jsx';
 import Cart from './components/Cart.jsx';
 import SearchResult from './components/SearchResult.jsx';
-import Shop from './pages/shop.jsx';
+import Shop from './pages/Shop.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 
