@@ -20,6 +20,10 @@ import Sunglasses from './pages/Sunglasses.jsx';
 import SmartPhones from './pages/SmartPhones.jsx';
 import Laptops from './pages/Laptops.jsx';
 import Cart from './components/Cart.jsx';
+import SearchResult from './components/SearchResult.jsx';
+import Shop from './pages/Shop.jsx';
+import About from './components/About.jsx';
+import Contact from './components/Contact.jsx';
 
 
 const router = createBrowserRouter([
@@ -45,6 +49,10 @@ const router = createBrowserRouter([
       {path: 'smartphones', element: <SmartPhones />},
       {path: 'laptops', element: <Laptops />},
       {path: 'cart', element: <Cart />},
+      {path: 'search', element: <SearchResult />},
+      {path: 'shop', element: <Shop />},
+      {path: 'about', element: <About />},
+      {path:'contact', element: <Contact />},
     ],
   },
 ]);
